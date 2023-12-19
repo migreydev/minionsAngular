@@ -1,7 +1,7 @@
 export interface Minion {
-    name: String,
-    bio: String,
-    img: String,
-    birth: String,
-    side: String
+    name: string,
+    bio: string,
+    img: string,
+    birth: string,
+    side: string
 }

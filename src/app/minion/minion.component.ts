@@ -1,16 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Minion } from '../interfaces/minion'
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-minion',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './minion.component.html'
 })
 export class MinionComponent {
+
+  
   minions: Minion[]=[
+
       {
         name: "Kevin",
         bio: "Aquí debería haber una biografía de la vida de este minion, pero son gente muy misteriosa, así que tendrás que imaginártela...",
